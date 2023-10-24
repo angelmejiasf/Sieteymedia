@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>Siete y Media......</title>
+</head>
+
+<body>
+  <main id="container" class="container">
+
+    <!-- Marcador -->
+    <h1 class="marcador" class="marcador__texto">
+      Juego de las 7 y media
+    </h1>
+
+    <!-- Jugador -->
+    <section id="jugador" class="jugador">
+      <h2 class="jugador__titulo">Jugador:&nbsp; <span id="jugador_titulo"> </span></h2>
+      <div id="jugador_visor" class="jugador__visor">
+        <!-- Aquí se añaden las cartas del jugador -->
+        <!-- Ejemplo:   <img src="./imagenes/04copas.jpg"> -->
+      </div>
+    </section>
+
+    <!-- Máquina -->
+    <section class="maquina">
+      <h2 class="maquina__titulo ">Máquina:&nbsp; <span id="maquina_titulo"> </span></h2>
+      <div id="maquina_visor" class="maquina__visor">
+        <!-- Aqui se añaden las cartas de la maquina -->
+        <!-- Ejemplo:   <img src="./imagenes/12copas.jpg"> -->
+      </div>
+    </section>
+
+    <!-- Botonera -->
+    <section id="botonera" class="botonera">
+      <button class="botonera__btn" id="pedir"> Carta</button>
+      <button class="botonera__btn botonera__btn--plantarse" id="plantarse">Plantarse</button>
+      <button class="botonera__btn botonera__btn--nuevapartida ocultar" id="nueva_partida">Nueva Partida</button>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

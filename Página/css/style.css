@@ -1,0 +1,115 @@
+/* Variables */
+:root {
+  --text-color: rgba(233, 79, 79, 0.997);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e4f1d;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.marcador, .maquina, .jugador, .botonera {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+/* Marcador */
+.marcador {
+  text-align: center;
+  color: rgba(128, 255, 0, 0.864);
+  font-variant: small-caps;
+}
+
+.marcador__texto {
+  font-size: 2rem;
+  font-variant: small-caps;
+  color: var(--text-color);
+}
+
+/* Jugador y máquina */
+.maquina__titulo, .jugador__titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.145);
+  padding: 0.25rem 0 0.5rem 0;
+}
+
+.maquina__titulo span, .jugador__titulo span {
+  color: rgba(128, 255, 0, 0.864);
+}
+
+/* Máquina */
+.maquina {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(7, 0, 0, 0.088);
+}
+
+.maquina__visor, .jugador__visor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 0;
+}
+
+/* Jugador */
+
+.jugador {
+  height: 250px;
+  background-color: rgba(243, 248, 248, 0.248);
+}
+
+/* Botonera */
+.botonera {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(243, 248, 248, 0.248);
+  padding: 0.5rem;
+}
+
+.botonera__btn {
+  width: 150px;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-left: 1rem;
+  background-color: rgba(128, 255, 0, 0.864);
+  color: #2e4f1ddc;
+  border: none;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+}
+
+.botonera__btn--plantarse {
+  background-color: rgb(236, 74, 74);
+  color: #eedededc;
+}
+
+.botonera__btn--nuevapartida {
+  background-color: rgba(128, 255, 0, 0.864);
+  color: #2e4f1ddc;
+  width: 600px;
+  display: none;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
